@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./src/reset.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+</head>
+<body>
+    <header><span class="reference">Este formulário foi criado tentando reproduzir algo próximo deste <a href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="_blank">formulário</a></span></header>
+    <main>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p class="italic">thank you for taking the time to help us improve the platform</p>
+        <div class="main background">
+
+        </div>
+        <form action="">
+            <label for="name">Nome</label>
+            <input id="name" class="input name" type="text" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" class="input email" placeholder="Enter your email" required>
+            <label for="age">Age<span> (optional)</span></label>
+            <input id="age" class="input age" type="number" placeholder="Age">
+            <p class="paragraf">Which option best describes your current role?</p>
+            <select name="role" id="current-role" class="input current role" placeholder="Select current role" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNot">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="prefix facultative" required>
+                <p class="paragraf">Would you recommend freeCodeCamp to a friend?</p>
+                <label class="option">
+                    <input 
+                        type="radio" 
+                        name="user-recomend"
+                        value="definitely"
+                        class="radio"
+                        >Definitely</label
+                    >
+                <label class="option">
+                    <input 
+                        type="radio" 
+                        name="user-recomend"
+                        value="maybe"
+                        class="radio"
+                        >Maybe</label
+                    >
+                <label class="option">
+                    <input 
+                        type="radio" 
+                        name="user-recomend"
+                        value="not-sure"
+                        class="radio"
+                        >Not sure</label
+                    >
+            </div>
+            <p class="paragraf">What is your favorite feature of freeCodeCamp?</p>
+            <select name="role" id="current-role" class="input current role" placeholder="Select current role" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source</option>
+            </select>
+            <div class="prefix checkBox" required>
+                <p class="paragraf">What would you like to see improved? <span>(Check all that apply)</span></p>
+                <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="front-end-projects"
+                        class="check"
+                        >Front-end Projects</label
+                    >
+                <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="back-end-projects"
+                        class="check"
+                        >Back-end Projects</label
+                    >
+                <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="data-visualization"
+                        class="check"
+                        >Data Visualization</label
+                    >
+                    <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="challenges"
+                        class="check"
+                        >Challenges</label
+                    >
+                <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="open-source-community"
+                        class="check"
+                        >Open Source Community</label
+                    >
+                <label class="option">
+                    <input 
+                        type="checkbox" 
+                        name="prefer"
+                        value="gitter-help-rooms"
+                        class="check"
+                        >Gitter help rooms</label
+                    >
+                    <label class="option">
+                        <input 
+                            type="checkbox" 
+                            name="prefer"
+                            value="videos"
+                            class="check"
+                            >videos</label
+                        >
+                    <label class="option">
+                        <input 
+                            type="checkbox" 
+                            name="prefer"
+                            value="city-meetups"
+                            class="check"
+                            >City Meetups</label
+                        >
+                    <label class="option">
+                        <input 
+                            type="checkbox" 
+                            name="prefer"
+                            value="wiki"
+                            class="check"
+                            >Wiki</label
+                        >
+                        <label class="option">
+                        <input 
+                            type="checkbox" 
+                            name="prefer"
+                            value="forum"
+                            class="check"
+                            >Forum</label
+                        >
+                    <label class="option">
+                        <input 
+                            type="checkbox" 
+                            name="prefer"
+                            value="additional-courses"
+                            class="check"
+                            >Additional Courses</label
+                        >
+                </div>
+                <label class="suggestions" for="textArea">Any comments or suggestions?</label>
+                <textarea class="text area" name="textArea" id="textArea" cols="30" rows="4" placeholder="Enter your comment here..."></textarea>
+                <button class="button" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
