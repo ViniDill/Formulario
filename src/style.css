@@ -190,3 +190,12 @@ textarea{
       margin: 20px 0 5px 1px;
     }
   }
+  
+  @media(max-width:678px) {
+
+    form {
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+    }
+  }
